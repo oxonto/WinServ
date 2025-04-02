@@ -1,4 +1,4 @@
-#Variables de configuration
+﻿#Variables de configuration
 $path = ".\import.csv"
 
 
