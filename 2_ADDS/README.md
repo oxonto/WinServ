@@ -1,8 +1,8 @@
-Le présent script permet d'installer le rôle ADDS et de le configurer.
+Le présent script permet d'installer le rôle AD-DS et de le configurer.
 
 Le choix de votre nom de domaine est à faire au lancement du script.
-Une question vous sera posez, il faudra alors écrire le nom de domaine souhaité dans le format suivant :\
+Une question vous sera posée, il faudra alors écrire le nom de domaine souhaité dans le format suivant :\
 
 ### **domaine.local**
 
- ### *(tester sur Windows Server 2022*)
+### *(tester sur Windows Server 2022)*
