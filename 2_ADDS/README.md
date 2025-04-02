@@ -5,4 +5,4 @@ Une question vous sera posée, il faudra alors écrire le nom de domaine souhait
 
 ### **domaine.local**
 
-### *(tester sur Windows Server 2022)*
+### *(testé sur Windows Server 2022)*

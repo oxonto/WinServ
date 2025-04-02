@@ -6,4 +6,4 @@ Le fichier CSV doit se trouver dans le même répertoire que le script pour une 
 
 [Voir fichier CSV](import.csv)
 
-### *(tester sur Windows Server 2022)*
+### *(testé sur Windows Server 2022)*

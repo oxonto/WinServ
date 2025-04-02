@@ -7,4 +7,4 @@ En lançant ce script, vous aurez le choix d'exécuter les trois scripts qui com
 
 Plus de détails sont présents dans les README de chacun des dossiers ci-joints.
 
-### *(tester sur Windows Server 2022)*
+### *(testé sur Windows Server 2022)*
