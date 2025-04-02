@@ -1,5 +1,5 @@
 ﻿#Variables de configuration
-$path = ".\import.csv"
+$path = "3_OU-user\import.csv"
 
 
 # Execution en tant qu'administrateur
