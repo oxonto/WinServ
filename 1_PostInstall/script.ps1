@@ -17,7 +17,7 @@ $DNSServers = @(Read-Host "Veuillez entrer le(s) DNS du serveur // pour plusieur
 
 
 # Configurer l'adresse IP
-$InterfaceAlias = (Get-NetAdapter | Where-Object Up).Name
+$InterfaceAlias = (Get-NetAdapter | Where-Object Status -eq Up).Name
 Set-NetIPInterface -InterfaceAlias $InterfaceAlias -Dhcp Disabled
 Disable-NetAdapterBinding -Name $InterfaceAlias -ComponentID ms_tcpip6
 New-NetIPAddress -InterfaceAlias $InterfaceAlias -IPAddress $IPAddress -PrefixLength $PrefixLength -DefaultGateway $Gateway -Confirm:$false
