@@ -44,8 +44,8 @@ Restart-Service -Name TermService -Force
 
 # Renommer le serveur
 if ($SrvName -eq "") {
-        Write-Output "Le serveur ne sera pas renommer"
-        Write-Output "Le nom actuel est : $env:COMPUTERNAME"
+        Write-Host "Le serveur ne sera pas renommer" -ForegroundColor Green
+        Write-Host "Le nom actuel est : $env:COMPUTERNAME" -ForegroundColor Green
     } 
 else 
     {

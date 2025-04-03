@@ -12,15 +12,21 @@ $SafeModePassword = Read-Host "Entrez le mot de passe du mode restauration DSRM 
 
 # Installer les rôles AD DS et DNS
 if (-not (Get-WindowsFeature -Name AD-Domain-Services | Where-Object Installed)) {
-    Write-Output "Installation du role AD DS en cours..."
+    Write-Host "Installation du role AD DS en cours..." -ForegroundColor Green
     Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools -IncludeAllSubFeature
     Write-Host "Installation du role AD DS terminé" -ForegroundColor Green
+}
+else {
+    Write-Host "Le role AD DS est déjà installé !" -ForegroundColor Green
 }
 
 if (-not (Get-WindowsFeature -Name DNS | Where-Object Installed)) {
     Write-Host "Installation du role DNS en cours..." -ForegroundColor Green
     Install-WindowsFeature -Name DNS -IncludeManagementTools -IncludeAllSubFeature
     Write-Host "Installation du role DNS terminé" -ForegroundColor Green
+}
+else {
+    Write-Host "Le role DNS est déjà installé !" -ForegroundColor Green
 }
 
 
