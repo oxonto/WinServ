@@ -25,12 +25,12 @@ if (-not (Get-WindowsFeature -Name DNS | Where-Object Installed)) {
 
 
 # Configurer le premier contrôleur de domaine de la forêt
-Get-ADDomain 
-if ($?) {
+try {
+    Get-ADDomain -ErrorAction SilentlyContinue 
     Write-Host "AD DS déjà configuré !" -ForegroundColor Green
     pause
     } 
-else 
+catch 
     {
     Write-Host "Configuration AD DS en cours..." -ForegroundColor Green
     Install-ADDSForest -DomainName $DomainName -SafeModeAdministratorPassword $SafeModePassword -InstallDns -Confirm:$false -Force
