@@ -18,7 +18,7 @@ if (-not (Get-WindowsFeature -Name AD-Domain-Services | Where-Object Installed))
 }
 
 if (-not (Get-WindowsFeature -Name DNS | Where-Object Installed)) {
-    Write-Output "Installation du role DNS en cours..."
+    Write-Host "Installation du role DNS en cours..." -ForegroundColor Green
     Install-WindowsFeature -Name DNS -IncludeManagementTools -IncludeAllSubFeature
     Write-Host "Installation du role DNS terminé" -ForegroundColor Green
 }
